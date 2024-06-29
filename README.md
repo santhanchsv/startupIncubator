@@ -1,5 +1,5 @@
 ## Idea Title	
-StartUp-Accelerator : AI powered web portal for Startups
+StartUp-Incubator : AI powered web portal for Startups
 
 
 ## Problem Statement Title

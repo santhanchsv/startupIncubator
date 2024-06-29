@@ -19,8 +19,7 @@ Development of Integrated dashboard for sharing of innovation and startups with 
 
 <br>
 
-## Presentation Link
-[Idea Link](https://drive.google.com/file/d/1_Ox-p-TFOkk89-yWpEuqvqbiZrea46Br/view?usp=sharing)
+
 
 
 ## Idea Abstract

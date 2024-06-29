@@ -37,16 +37,16 @@ The government of India's “Make in India” initiative includes innovation and
 ![frontpage](website-snapshots/home.png)
 
 ### Top Start Ups
-![startups](website-snapshots/topstartups.PNG)
+![startups](website-snapshots/topstartups.png)
 
 ### Resources
-![resources](website-snapshots/learningresources.PNG)
+![resources](website-snapshots/learningresources.png)
 
 ### Government Schemes
-![schemes](website-snapshots/govschemes.PNG)
+![schemes](website-snapshots/govschemes.png)
 
 ### ENT/StartUp Fellow Registration
-![register](website-snapshots/entreg.PNG)
+![register](website-snapshots/entreg.png)
 
 ### Further Details
 ![details](website-snapshots/8.PNG)

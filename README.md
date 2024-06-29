@@ -34,7 +34,7 @@ The government of India's “Make in India” initiative includes innovation and
 ## Website Snapshots
 
 ### Front Page
-![frontpage](website-snapshots/home.PNG)
+![frontpage](website-snapshots/home.png)
 
 ### Top Start Ups
 ![startups](website-snapshots/2.PNG)

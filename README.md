@@ -56,7 +56,7 @@ The government of India's “Make in India” initiative includes innovation and
 ![connect](website-snapshots/10.PNG)
 
 ### Organization Projects
-![projects](website-snapshots/9.PNG)
+![projects](website-snapshots/dashboardgov.png)
 
 ### Project Submission
 ![submit](website-snapshots/4.PNG)

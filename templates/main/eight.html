@@ -1,0 +1,175 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+  <body style="margin-top: 100px;"> <!-- Add margin-top to create a gap -->
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Persona Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 2rem;
+    }
+    h1, h2, h3 {
+      margin: 1rem 0;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #4CAF50; /* Green color for h1 */
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #4CAF50; /* Blue color for h2 */
+    }
+    h3 {
+      color: #4CAF50; /* Orange color for h3 */
+    }
+    ul {
+      padding-left: 1.5rem;
+      list-style: disc;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <h1>Persona Development</h1>
+  <p>Persona development is a critical exercise that helps you understand your target audience and customer segments. It is a foundation for developing successful products, businesses, services, and experiences.</p>
+  <h2>What is Persona Development?</h2>
+  <p>In marketing and product design, persona development is the process of creating representations of different user types who will interact with your product or service. These personas are fictional characters that could potentially use your business, brand, website, or product. They represent the goals and behaviors of a potential customer group.</p>
+  <p>Ideally, personas are developed through data from interviews or previous interactions with a product. If you don't have data, you can still create a persona, but it will be an assumption until validated. Persona development typically results in a persona profile, a one- to two-page document describing the persona's demographics, background, goals, skills, attitudes, and environments.</p>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <img src="{% static 'main/img34.png' %}" alt="" class="responsive-img materialboxed medium-image" width="450" height="450">
+</div>
+
+  <h2>Why Use Personas?</h2>
+  <p>Personas help you focus on business, marketing, and feature development decisions by making the user or customer more human. Persona profiles can also bring alignment and clarity to a team by creating a common language for everyone involved. Additionally, they offer a way to test and prioritize features, services, and offerings throughout the development process.</p>
+  <h3>Benefits of Persona Profiles:</h3>
+  <ul>
+    <li>Align stakeholders and leaders on decisions</li>
+    <li>Inform information architects for wireframes and user interface design</li>
+    <li>Guide designers in creating the overall look and feel of a product</li>
+    <li>Help system engineers and developers make user-centered decisions</li>
+    <li>Ensure website content is written for the appropriate audience</li>
+  </ul>
+  <h2>How to Use Persona Profiles</h2>
+  <p>Persona development is an ongoing process because people's wants and needs change. Persona profiles should be developed at the beginning of product development or starting a business and revisited as you acquire data.</p>
+  <p>It's best to create three to four personas to focus on the major needs of the most important user groups, not to represent every audience or address all user needs.</p>
+  <h3>To ensure accurate personas:</h3>
+  <ul>
+    <li>Conduct user research to answer questions about who your users are and why they use your product or service.</li>
+    <li>Condense the research to find themes and characteristics that are specific, relevant, and applicable to your product and users.</li>
+    <li>Brainstorm and organize elements into persona groups that represent your target users. Give each group a name or classification.</li>
+    <li>Refine, combine, and prioritize the rough personas. Separate them into primary, secondary, and complementary categories if necessary.</li>
+  </ul>
+  <h2>Components of a Persona Profile</h2>
+  <p>Persona profiles typically include the following key pieces of information:</p>
+  <ul>
+    <li>Persona group (e.g., web manager)</li>
+    <li>Fictional name</li>
+    <li>Job title and major responsibilities</li>
+    <li>Family status</li>
+    <li>Demographics (age, education, ethnicity)</li>
+    <li>Goals and tasks they try to complete using your site or product</li>
+    <li>Physical, social, and technological environment</li>
+    <li>A quote that summarizes what matters most to the persona related to your site</li>
+    <li>Casual picture representing the user group (optional)</li>
+  </ul>
+  <h2>Conclusion</h2>
+  <p>Understanding your customer is fundamental to the success of any business, service, or product. Persona profiling helps you understand your customer and how they relate to your business value proposition.</p>
+</div>
+</body>
+</html>
+```
+

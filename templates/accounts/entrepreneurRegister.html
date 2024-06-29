@@ -1,0 +1,71 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %} 
+
+{% load crispy_forms_tags %}
+
+{% load socialaccount %} 
+
+{% providers_media_js %} 
+
+<!--Register--> 
+<div class="container py-5">
+	<h1> Entrepreneur Registration </h1>
+	<form method="POST">
+        {% include 'includes/messages.html' %}
+		{% csrf_token %}
+        {{ entrepreneurRegister_form|crispy }} 
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn btn-primary col-md-2 mx-1" type="submit"> Register </button>
+                <a class="btn btn-primary col-md-2 mx-1" href="{% url 'entrepreneur-login' %}"> Login </a>
+            </div> 
+        </div>                 
+	</form>
+</div>
+
+<style>
+    /* Styles for the body */
+    body {
+        background-color: #f6f8fa; /* Light gray background */
+        font-family: Arial, sans-serif;
+    }
+
+    /* Styles for the container */
+    .container {
+        margin-top: 50px;
+    }
+
+    /* Styles for the headings */
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Styles for the buttons */
+    .btn {
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Blue */
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    /* Styles for the button container */
+    .button-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

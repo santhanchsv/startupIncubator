@@ -1,0 +1,478 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "gdPJ7UU5-879AEWrXzwns",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="gdPJ7UU5-879AEWrXzwns"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "gdPJ7UU5-879AEWrXzwns",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="gdPJ7UU5-879AEWrXzwns"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+      https://www.chatbase.co/chatbot-iframe/gdPJ7UU5-879AEWrXzwns
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+
+
+
+    <!-- <div class="container mt-5">
+      <div class="row justify-content-between">
+        <div style="height: 500px" class="col-md-4 px-3 py-3 my-3">
+          <div
+            style="overflow: scroll"
+            class="row h-100 m-0 p-0 text-start bg-lighten"
+          >
+            <p class="fs-1">About US</p>
+            <p>
+              StartUp Incubator provides an integrated dashboard for sharing of innovation and startups with success stories across Higher Educational Institutions and relevant stakeholders.
+We aim to provide a single platform for the students/ startup fellows/ entrepreneurs to register and submit their their ideas / prototypes / business idea.
+Apart from, facilitating the various agencies (Govt. / Pvt.) to register and submit their problem statements, we also provide a platform for Venture capitalist / Angel investors for analyzing ideas / prototypes / solutions of their interest to invest fund.
+            </p>
+          </div>
+        </div> -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Carousel with Extended Zoom Effect</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                .carousel-item {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .carousel-item img {
+                    transition: transform 10s ease; /* Extend the zoom effect duration */
+                }
+                .carousel-item.active img {
+                    transform: scale(1.1);
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 1;
+                }
+                .carousel-caption {
+                    z-index: 2;
+                }
+                .carousel-caption h1 {
+                    font-size: 3em;
+                }
+            </style>
+        </head>
+        <body>
+            <div style="height: 90vh" class="col-md-12 px-0 py-0 my-0">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1500">
+                            <img style="height: 90vh; object-fit: cover; width: 100%;" src="{% static 'main/img111.png' %}" class="d-block w-100" alt="...">
+                            <div class="overlay"></div>
+                            <div class="carousel-caption d-none d-md-block" style="top: 60%; transform: translateY(-50%);">
+                                <h1 style="color: white; font-weight: bold; font-size: 3em;">Cultivating The Next Generation</h1>
+                                <h1 style="color: white; font-weight: bold; font-size: 3em;">Of Successful Entrepreneurs</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                          <img style="height: 90vh; object-fit: cover; width: 100%;" src="{% static 'main/img16.jpg' %}" class="d-block w-100" alt="...">
+                          <div class="overlay"></div>
+                          <div class="carousel-caption d-none d-md-block text-left" style="top: 60%; transform: translateY(-50%); left: 10%; text-align: left;">
+                              <h1 style="color: white; font-weight: bold; font-size: 3em;">Improve skills</h1>
+                              <h1 style="color: white; font-weight: bold; font-size: 3em;">through learning new ones</h1>
+                              <a href="{% url 'resources' %}" class="btn mt-3" style="font-size: 1.5em; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.7); border: none; border-radius: 5px; color: white;">Go to Detail</a>
+                          </div>
+                      </div>
+                      
+                      
+                      <div class="carousel-item" data-bs-interval="1500">
+                        <img style="height: 90vh; object-fit: cover; width: 100%;" src="{% static 'main/img17.jpg' %}" class="d-block w-100" alt="...">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption d-none d-md-block text-left" style="top: 60%; transform: translateY(-50%); left: 10%; text-align: left;">
+                            <h1 style="color: white; font-weight: bold; font-size: 3em;">Get to know the details</h1>
+                            <h1 style="color: white; font-weight: bold; font-size: 3em;">of government schemes</h1>
+                            <a href="{% url 'schemes' %}" class="btn mt-3" style="font-size: 1.5em; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.7); border: none; border-radius: 5px; color: white;">Go to Detail</a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+          <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<html lang="en">
+  <body>
+<div class="row">
+  <div class="col-12 text-center fs-1">Top StartUps</div>
+  <div class="row bg-dark py-0 rounded-3 m-2 d-flex flex-row justify-content-between px-4 py-4">
+    {% for startup in startups %}
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card p-1" style="width: 100%;">
+        <div class="card-body">
+          <img src="{{startup.photo.url}}" class="card-img-top" alt="..."/>
+          <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title">{{startup.title}}</h5>
+            <button class="btn" id="btn1">
+              <i class="fa-solid fa-angles-up"></i>
+            </button>
+          </div>
+          <p class="card-text">
+            {{startup.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="row my-4 bg-lighten rounded-3">
+  <div class="col-md-6 bg-darken">
+    <div class="col-12"><p class="fs-1">Free Resources</p></div>
+    <div class="col-12 d-flex flex-row justify-content-around flex-wrap">
+      <div class="card mb-4 col-5">
+        <img
+          src="{% static 'main/courses.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title">Top Courses</h5>
+            <button class="btn" id="btn1">
+              <i class="fa-solid fa-angles-up"></i>
+            </button>
+          </div>
+          <p class="card-text">
+            Access an array of courses made available for startups of all stages 
+          </p>
+        </div>
+      </div>
+      <div class="card mb-4 col-5">
+        <img
+          src="{% static 'main/reports.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title">Market Research Reports</h5>
+            <button class="btn" id="btn1">
+              <i class="fa-solid fa-angles-up"></i>
+            </button>
+          </div>
+          <p class="card-text">
+            Stay ahead of the game with our curated list of Market Research Reports
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6" style="height: 400px; overflow-y: scroll">
+    <div class="col-12"><p class="fs-1">FAQs</p></div>
+    <div class="col-12 justify-content-around">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is StartUp Incubator?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                StartUp Incubator is intended to build a strong ecosystem that is conducive for the growth of startup businesses, to drive sustainable economic growth and generate large scale employment opportunities. The Government through this initiative aims to empower startups to grow through innovation and design.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How to contact the Investors or Mentors?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Register yourself on pur portal and under your dashboard, you can find list of all projects, mentors and investors along with their profile. You can contact them directly via contact details.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              What qualifies as a "Startup"?
+  
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                An entity shall be considered as a Startup - If it is incorporated as a private limited company or registered as a partnership firm or a limited liability partnership in India
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Why do Investors invest in StartUp?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Investing in startups is a risky proposition, but the low requirement for overhead capital combined with high upside potential, makes it lucrative for investors to put their bets on startups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+            I have an innovative idea that I want to pursue as a Startup. What guidance can the portal provide me?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Startup India Learning Program is a free online entrepreneurship program by Startup India. The aim is to help entrepreneurs get their ideas and ventures to the next level through structured learning. The program covers lessons on key areas of starting up by 40+ top founders of India in an extensive 4-Week Program.
+              </p>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row bg-#f5f5f5 py-5">
+  <div class="col-6">
+    <p class="fs-2 text-center">StartUp Incubator</p>
+    <div class="text-center">
+      <i class="fa-brands fa-youtube fs-1"></i>
+      <i class="fa-brands fa-facebook fs-1"></i>
+      <i class="fa-brands fa-google fs-1"></i>
+      <i class="fa-brands fa-linkedin fs-1"></i>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="row">
+      <div class="col-4">
+        <div class="row">
+          <div class="col-12 fs-6">Privacy Policy</div>
+          <div class="col-12 fs-6">Terms and Conditions</div>
+          <div class="col-12 fs-6">Disclaimer</div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-12 mb-1 fs-4 ps-5">Connect With Us</div>
+          <div class="row">
+            <div class="col-5 my-2">
+              <i class="fa-solid fa-phone fs-3"></i> 037-054-303
+            </div>
+            <div class="col-6 my-2">
+              <i class="fa-solid fa-envelope fs-3"></i> startupIncubator@mail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div> <!-- Closing tag for the main container -->
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+    <body style="margin-top: 10px;"> <!-- Add margin-top to create a gap -->
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "gdPJ7UU5-879AEWrXzwns",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="gdPJ7UU5-879AEWrXzwns"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "gdPJ7UU5-879AEWrXzwns",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="gdPJ7UU5-879AEWrXzwns"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+      <!-- https://www.chatbase.co/chatbot-iframe/gdPJ7UU5-879AEWrXzwns -->
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'Homee' %}">LOGOUT</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

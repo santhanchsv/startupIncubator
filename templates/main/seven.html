@@ -1,0 +1,150 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+    <body style="margin-top:50px;"> <!-- Add margin-top to create a gap -->
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+
+<div style="border: 1px solid #ccc; padding: 20px; width: 80%; margin: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Journey Mapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>What You Can Learn from Walking a Mile in Your Customer's Shoes</h1>
+    <p>How to use the Customer journey map to identify opportunity. They say ‘the journey of a thousand miles begins with a single step’. And that thousand miles, inclusive of the first step your customer takes with your business or product, can be understood by understanding your customer journey. Customer Journey Mapping helps you to effectively work on your services and create a healthy future for you and your company.</p>
+    <p>Undertaking the exercise gives you an understanding your customer's story, their context in the world and how they interact with an experience in the form of a solution, product, service or system.</p>
+    <p>If you haven't worked though the process of defining what your business does, who your customer is or how your business gives value to your customer, I suggest you work through the business model canvas, persona development and the value proposition canvas exercises before undertaking the process of Customer Journey Mapping.</p>
+    <h2>What is a Customer Journey Map?</h2>
+    <p>A Customer Journey Map is a tool used by user experience designers that enables a business to improve their customer experience. The tool documents the customer experience through the customer's perspective in relation to the business, helping a business to best understand how customers are interacting with their products or services and how a business can identify areas for improvement to create more value.</p>
+    <h3>There are a number of different elements to work through when developing a Customer Journey Map. You will always have some assumptions. I suggest you work through the steps below and continually revisit them and come back to the map as a reference point.</h3>
+    <ol>
+        <li>Research, research, research</li>
+        <p>Any Customer Journey Map is purely theoretical until it has been validated through data, this is one of the hardest parts of understanding a customer experience. I suggest, as always, to conduct extensive research throughout the exercise. That is before, during and after to weigh the outcomes correctly.</p>
+        <p>Some tools I suggest to use are; Customer interviews, contextual inquiry, customer surveys, review customer support logs, web analytics, social media analysis, competitor analysis and customer observational mapping. The list goes on and on. The point of this is to remove assumption and have correct data. Be aware of modal bias and looking for answers that you want to hear. A great product designer will use the scientific method and utilize critical thinking to bring about the best results.</p>
+        <li>Define the customer</li>
+        <p>Firstly, we need to define the customer, find out who they are and what their wants, needs and motivations are. I suggest developing personas to help represent a group of potential customers that you have identified for your business or product. To understand how to develop customer personas you can read this guide on persona development.</p>
+        <p>For this example, we will call our customer Ankit. Ankit is a 30-year-old man who works as an electrical engineer. Ankit is a smart guy and is good at his job. He knows what he wants and what he doesn’t want. He genuinely wants the highest quality items and is happy to pay for them. Ankit needs supplies to perform his job such as wires, tools and components. These are usually provided by his employer, but from time-to-time he has to go to an external supplier to find what he needs. Ankit is motivated by doing a good job, he feels a sense of mastery from his work which in turn gives him fulfilment. This is why he wants the best quality products; anything less reflects on his work and his sense of mastery.</p>
+        <li>Define the customer job</li>
+        <p>The customer journey takes place while the customer is attempting to do a job. A job is a task that is either functional, emotional or social that helps the customer achieve a goal. This job is the experience we are mapping in relation to our business. How did we help the customer complete or fulfil their goals by completing the job that was required. An example job could be; purchasing take out, buying a car or topping up a public transport ticket.</p>
+        <p>But what about Ankit? Ankit’s goal is to display mastery in his work and to do this he has to complete the build of an electrical circuit. Unfortunately he doesn’t have the correct part needed to complete the job, so he’s going to have to purchase the part from a supplies store. The job is: Purchase the part from a supplies store.</p>
+        <li>Understanding the journey</li>
+        <p>Like every book, every customer journey has a beginning, middle and end. These are defined as before, during and after the Customer Job is completed. Ankit is on the job site and he is going to have to travel to the store (before), purchase the part (during) and return to the job site (after). The start of the journey begins at the first committed action taken towards completing the job. However, along the way there are a large amount of actions or touchpoints that are going to happen which are all part of the Customer Journey. The Customer Journey ends when the job is completed and the customer’s state resets to normal.</p>
+        <li>Define the touchpoints</li>
+        <p>A touchpoint is the description of an instance or action a person makes while trying to achieve a social, emotional or functional job. Touchpoints are seen as an action a user takes from their context and can be related back to the interactions they have with a company, through the company’s customer relationship and marketing channels. An example touchpoint could be: To call the delivery store, search on Google for car dealerships nearby or stand in line for an hour to pay for your public transport ticket (high pain).</p>
+        <p>For Ankit to complete his job and complete his goal there are a number of touchpoints through which hewill move. I have mapped some examples below. The map can be as high level or as low level as you want. The more detail you go into the more time and resources it will take to map. Having a detailed map is helpful as it will help you to identify opportunities for improving the experience for your customer. For the purpose of this document I will keep  it high level.</p>
+            </ol>
+            <h3>Tools to Use</h3>
+<ul>
+    <li>Whiteboard</li>
+    <li>Whiteboard markers</li>
+    <li>Butchers paper</li>
+    <li>Digital templates</li>
+</ul>
+<h3>Most Practical Process</h3>
+<p>First sketch out the Customer Journey Map on a whiteboard or butchers paper and refine, before adding to the above template. From the digital template you can build some really solid infographics.</p>
+</body>
+</html>
+</div>

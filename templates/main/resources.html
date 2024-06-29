@@ -1,0 +1,327 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+  <body style="margin-top: 100px;"> <!-- Add margin-top to create a gap -->
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Startup Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url("{% static 'main/bg_1.jpg' %}");
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+        p {
+            line-height: 1.6;
+        }
+        .intro-text {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .step {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .step h2 {
+            color: #000; /* Changed heading color to black */
+        }
+        .step-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            color: #000000;
+        }
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 10px; /* Added margin bottom for spacing */
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .learn-now-button {
+            display: block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #222; /* Box color */
+            color: #ddd; /* Light black text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px; /* Add margin top for spacing */
+        }
+
+        .learn-now-button:hover {
+            background-color: #444; /* Darker box color on hover */
+            color: #fff; /* White text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Start Your Startup Journey</h1>
+        <p class="intro-text">Starting a startup can be difficult but with Eship simplified Learning Resources, you can start your startup journey within minutes by exploring a variety of hands-on Startup content designed for entrepreneurs and startups of all levels and with different industry backgrounds. We seek at once to provide practical resources and tools to develop a greater understanding of the principals of entrepreneurship.</p>
+        <div class="step">
+            <h2>Step 1: Stating your startup hypothesis</h2>
+            <div class="step-content">
+                <div class="card">
+                    <h3>Idea Validation</h3>
+                    <img src="{% static 'main/img1.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <p>Every startup originates from an idea, an innovation. Learn how to test the feasibility of your startup idea in this module on idea validation.</p>
+                    <a href="{% url 'value' %}" class="learn-now-button">Learn Now</a>
+                </div>
+
+                <div class="card">
+                    <h3>Business Model</h3>
+                    <img src="{% static 'main/img2.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                
+                    <p>The Business Model Canvas (BMC) is a strategic management tool. Use this tool to quickly and easily define and communicate a business idea.</p>
+                    <a href="{% url 'four' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Value Proposition Canvas</h3>
+                    <img src="{% static 'main/img3.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                
+                    <p>Develop a deep understanding of how your business value proposition relates to your customer and learn to develop better value for your customers.</p>
+                    <a href="{% url 'five' %}" class="learn-now-button">Learn Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 2: Testing your startup hypothesis:</h2>
+            <div class="step-content">
+                <div class="card">
+                    <h3>Customer Journey</h3>
+                    <img src="{% static 'main/img4.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <p>Customer journey is the complete sum of experiences that customers go through when interacting with your company and brand.</p>
+                    <a href="{% url 'seven' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Persona Development</h3>
+                    <img src="{% static 'main/img5.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                
+
+                    <p>Persona Development is critical in helping you to understand your target audience and customer segments which helps you to better communicate with them.</p>
+                    <a href="{% url 'eight' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Empathy Map</h3>
+                    <img src="{% static 'main/img6.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <P></P>
+                    <p>This tool will give you a  deeper understanding of your customer's experience. Much like a user persona, an empathy map can represent a group of users.</p>
+                    <a href="{% url 'ten' %}" class="learn-now-button">Learn Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 3: Evaluating your startup environment:</h2>
+            <div class="step-content">
+                <div class="card">
+                    <h3>Blue Ocean Strategy</h3>
+                    <img src="{% static 'main/img7.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <p>Competing in overcrowded industries is no way to sustain high performance. The real opportunity is to create blue oceans of uncontested market space.</p>
+                    <a href="#" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Business Model Canvas 2</h3>
+                    <img src="{% static 'main/img8.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <p>With the basics of business model cleared we now discuss the strategic alliance of your business model with the industry conditions of your field.</p>
+                    <a href="#" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Prototyping</h3>
+                    <img src="{% static 'main/img9.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <p>After drafting the strategy for your startup its now time to develop a prototype and test it out in the real world. Learn which hypothesis works and which fails.</p>
+                    <a href="#" class="learn-now-button">Learn Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 4: Legals and government support:</h2>
+            <div class="step-content">
+                <div class="card">
+                    <h3>Company Registration In India</h3>
+                    <img src="{% static 'main/img10.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <p>Learn How can you register your startup as  a company in India. Learn about  the government norms, policies and documents required.</p>
+                    <a href="{% url 'nine' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Intellectual Property Rights</h3>
+                    <img src="{% static 'main/img11.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <p>How can you file for a patent? Confused about the different types of patent? Have trouble filing the forms? Find all the answers here.</p>
+                    <a href="{% url 'leven' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>How To File For Patent</h3>
+                    <img src="{% static 'main/img12.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <P></P>
+                    <p>Develop a deep understanding of how your business value proposition relates to your customer and learn to develop better value for your customers.</p>
+                    <a href="{% url 'srh' %}" class="learn-now-button">Learn Now</a>
+                </div>
+                <div class="card">
+                  <h3>Investor Engagement</h3>
+                  <img src="{% static 'main/img13.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                  <p>What do investors look for ? How to plan a perfect pitch ? Find all the answers in this course.</p>
+                  <a href="{% url 'csk' %}" class="learn-now-button">Learn Now</a>
+              </div>
+              <div class="card">
+                  <h3>Government Policies</h3>
+                  <img src="{% static 'main/img14.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                  <P></P>
+                  <P></P>
+                  <p>Learn about the startup India government program and different policies and subsidies offered by the government.</p>
+                  <a href="{% url 'govpo' %}" class="learn-now-button">Learn Now</a>
+              </div>
+              <div class="card">
+                  <h3>Marketing Matrics</h3>
+                  <img src="{% static 'main/img15.png' %}" alt="" class="responsive-img materialboxed medium-image">
+                  <p>Learn about the marketing metrics that matter in a startup and ways to draft a perfect market strategy for your startup.</p>
+                  <a href="#" class="learn-now-button">Learn Now</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

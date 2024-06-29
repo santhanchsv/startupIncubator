@@ -1,0 +1,298 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+  <body style="margin-top: 100px;"> <!-- Add margin-top to create a gap -->
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+<div style="border: 1px solid #ccc; padding: 20px;">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Business Model Canvas Explained</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                color: #333;
+            }
+            h1 {
+                text-align: center;
+            }
+            h2, h3 {
+                margin-top: 30px;
+                color: #555;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            ul, ol {
+                margin-bottom: 15px;
+                margin-left: 30px;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            strong {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Business Model Canvas Explained</h1>
+    <h2>Introduction:</h2>
+    <p>The Business Model Canvas (BMC) is a strategic management tool to quickly and easily define and communicate a business idea or concept. It is a one-page document which works through the fundamental elements of a business or product, structuring an idea in a coherent way.</p>
+    <p>It has nine elements:</p>
+    <img src="{% static 'main/img18.png' %}" alt="" class="responsive-img materialboxed medium-image">
+    <ul>
+        <li>Key Partners</li>
+        <li>Cost Structure</li>
+        <li>Key Activities</li>
+        <li>Value Propositions</li>
+        <li>Customer Relationships</li>
+        <li>Customer Segments</li>
+        <li>Key Resources</li>
+        <li>Channels</li>
+        <li>Revenue Streams</li>
+    </ul>
+    <p><a href="https://strategyzer.com/">Strategyzer.com</a></p>
+    <p>The right side of the BMC focuses on the customer (external), while, the left side of the canvas focuses on the business (internal). Both external and internal factors meet around the value proposition, which is the exchange of value between your business and our customer/clients.</p>
+    <h2>The nine elements of a business model are:</h2>
+    <ol>
+        <li><strong>Customer Segments:</strong> Who are the customers? What do they think? See? Feel? Do?</li>
+        <li><strong>Value Propositions:</strong> What's compelling about the proposition? Why do customers buy, use?</li>
+        <li><strong>Channels:</strong> How are these propositions promoted, sold and delivered? Why? Is it working?</li>
+        <li><strong>Customer Relationships:</strong> How do you interact with the customer through their journey?</li>
+        <li><strong>Revenue Streams:</strong> How does the business earn revenue from the value propositions?</li>
+        <li><strong>Key Activities:</strong> What uniquely strategic things do the business due to deliver its proposition?</li>
+        <li><strong>Key Resources:</strong> What unique strategic assets must the business have to compete?</li>
+        <li><strong>Key Partnerships:</strong> What can the company not do so it can focus on its Key Activities?</li>
+        <li><strong>Cost Structure:</strong> What are the business' major cost drivers? How are they linked to revenue?</li>
+    </ol>
+    <p>The Canvas is popular with entrepreneurs and intrapreneurs for business model innovation. Fundamentally, I find it delivers three things:</p>
+    <ol>
+        <li><strong>Focus:</strong> Stripping away the 40+ pages of 'stuff' in a traditional business plan, I've seen users of the BMC improve their clarity and focus on what's driving the business (and what's non-core and getting in the way).</li>
+        <li><strong>Flexibility:</strong> It's a lot easier to tweak the model and try things (from a planning perspective) with something that's sitting on a single page.</li>
+        <li><strong>Transparency:</strong> Your team will have a much easier time understanding your business model and be much more likely to buy in to your vision when it's laid out on a single page.</li>
+    </ol>
+    <h2>Get started:</h2>
+    <h3>Customer Segments</h3>
+    <p>Customer Segment comprises the heart of any business model. Without (profitable) customers, no company can survive for long. In order to better satisfy customers, a company may group them into distinct segments with common needs, common behaviors, or other attributes.</p>
+    <p>The Customer Segments Building Block defines the different groups of people or organizations an enterprise aims to reach and serve.</p>
+    <p>This block answers basic questions regarding customer segments like:</p>
+    <ul>
+        <li>Whom are we creating value for?</li>
+        <li>Who are your most important customers?</li>
+    </ul>
+    <p>Using persona development and customer journey one can answer such questions and develop a better understanding of their customers</p>
+    <p>Customer groups represent separate segments if:</p>
+    <ul>
+        <li>Their needs require and justify a distinct order</li>
+        <li>They are reached through different Distribution Channels</li>
+        <li>They require different types of relationships</li>
+        <li>They have substantially different profitabilities</li>
+        <li>They are willing to pay for different aspects of the order</li>
+    </ul>
+    <h3>Value Proposition</h3>
+    <p>The ValuePropositions Building Block describes the bundle of products and services that create value for a specific Customer Segment. The Value Proposition is the reason why customers turn to one company over the another. It solves a customer problem or satisfies a customer need.</p>
+    <p>This block answers basic questions regarding Value Proposition like:</p>
+    <ul>
+        <li>Which of the Problems or Needs that you identified are you fulfilling?</li>
+        <li>What is unique about your Value Propositions and why does your customer prefer them to their Current Alternatives?</li>
+        <li>What bundles of products and services are we offering to each Customer Segment?</li>
+        </ul>
+        <h3>Channels</h3>
+        <p>The Channels Building Block describes how a company communicates with and reaches its Customer Segments to deliver a Value Proposition. Channels are customer touch points that play an important role in the customer experience.</p>
+        <p>Channels serve several functions, including:</p>
+        <ul>
+        <li>Raising awareness among customers about a company's products and services</li>
+        <li>Helping customers evaluate a company's Value Proposition</li>
+        <li>Allowing customers to purchase specific products and services</li>
+        <li>Delivering a Value Proposition to customers</li>
+        <li>Providing post-purchase customer support</li>
+        </ul>
+        <p>Channels include entities you use to communicate your proposition to your segments, as well as entities through which you sell product and later service customers.</p>
+        <p>For example, if you sell bulbs for light houses and there's a website all light house attendants purchase equipment, that site is a sales Channel. If you use Google AdWords, that's a Channel, too (for getting attention ). If you use a third party company to service the bulbs when they break, that's also a Channel.</p>
+        <p>This block answers basic questions regarding channels like:</p>
+        <ul>
+            <li>Through which Channels do our Customer Segments want to be reached?</li>
+            <li>How are we reaching them now?</li>
+            <li>How are our Channels integrated?</li>
+            <li>Which ones work best?</li>
+            <li>Which ones are most cost-efficient?</li>
+            <li>How are we integrating them with customer routines?</li>
+        </ul>
+        <h3>Customer Relations</h3>
+        <p>The Customer Relationships Building Block describes the types of relationships a company establishes with specific Customer Segments. A company should clarify the type of relationship it wants to establish with each Customer Segment. Relationships can range from personal to automated.</p>
+        <p>Customer relationships may be driven by the following motivations:</p>
+        <ul>
+            <li>Customer acquisition</li>
+            <li>Customer retention</li>
+            <li>Boosting sales (upselling)</li>
+        </ul>
+        <p>This block answers basic questions regarding customer relations like:</p>
+        <ul>
+            <li>How does the customer interact with you through the sales and product lifecycle?</li>
+            <li>Do they have a dedicated personal contact they see? Call?</li>
+            <li>Is all the interaction over the web?</li>
+            <li>Do they never see you at all but instead talk to a Channel?</li>
+        </ul>
+        <p>A few litmus test questions you may want to ask yourself at this point:</p>
+        <ul>
+            <li>Can the Value Proposition be delivered to the Customer this way?</li>
+            <li>All the way through from promotion, to sale, to post-sale service?</li>
+            <li>Can you make the numbers work?</li>
+            <li>Is there a premium support product you need to create test?</li>
+        </ul>
+        <p>Many companies, like Apple, have rejected the false choice of 'Do we provide phone support or not?' instead of offering personal support for a reasonable charge.</p>
+        <h3>Revenue Streams</h3>
+        <p>
+            The Revenue Streams Building Block represents the cash a company generates from each Customer Segment (costs must be subtracted from revenues to create earnings). If customers comprise the heart of a business model, Revenue Streams are its arteries. The startup may generate one or more Revenue Streams from each Customer Segment. Each Revenue Stream may have different pricing mechanisms, such as fixed list prices, bargaining, auctioning, market dependent, volume dependent, or yield management.
+        </p>
+        <p>
+            A business model can involve two different types of Revenue Streams:
+        </p>
+        <ul>
+            <li><strong>Transaction revenues</strong> resulting from one-time customer payments</li>
+            <li><strong>Recurring revenues</strong> resulting from ongoing payments to either deliver a Value Proposition to customers or provide post-purchase customer support</li>
+        </ul>
+        <p>
+            This block answers basic questions regarding revenue streams like:
+        </p>
+        <ul>
+            <li>For what value are our customers really willing to pay?</li>
+            <li>For what do they currently pay?</li>
+            <li>How are they currently paying?</li>
+            <li>How would they prefer to pay?</li>
+            <li>How much does each Revenue Stream contribute to overall revenues?</li>
+        </ul>
+        <h2>Key Activities</h2>
+        <p>
+            These are the crucial things the business needs to do to deliver on its propositions and make the rest of the business work—for example, if selling through 3rd parties is part of the model, then activity around channel management is probably pretty important. For a product-driven business, this probably includes ongoing learning about users and new techniques to build a better product. If you’re focused on doing a bunch of things for a particular set of customers (ex: comprehensive IT for law offices), this probably includes maintaining superior expertise on the segment(s) and creating or acquiring products and services that are a good fit, whatever that entails. For an infrastructure business (ex: electric utility), it probably includes keeping the infrastructure working reliably and making it more efficient.
+        </p>
+        <p>
+            This block answers basic questions regarding key activities like:
+        </p>
+        <ul>
+            <li>What Key Activities do our Value Propositions require?</li>
+            <li>Our Distribution Channels?</li>
+            <li>Customer Relationships?</li>
+            <li>Revenue streams?</li>
+        </ul>
+        <h2>Key Resources</h2>
+        <p>
+            Key resources are the strategic assets you need in place, and you need in place to a greater or more targeted degree than your competitors. The Business Model Canvas proposes that there are three core business types: product, scope, and infrastructure. These tend to have similar types of Key Resources. Key resources can be physical, financial, intellectual, or human. Key resources can be owned or leased by the company or acquired from key partners. Different Key Resources are needed depending on the type of business model. A microchip manufacturer requires capital-intensive production facilities, whereas a microchip designer focuses more on human resources.
+        </p>
+        <p>
+            This block answers basic questions regarding key resources like:
+        </p>
+        <ul>
+            <li>What Key Resources do our Value Propositions require?</li>
+            <li>Our Distribution Channels?</li>
+            <li>Customer Relationships?</li>
+            <li>Revenue Streams?</li>
+        </ul>
+        <h2>Key Partners</h2>
+        <p>
+            The Key Partnerships Building Block describes the network of suppliers and partners that make the business model work. Companies forge partnerships for many reasons, and partnerships are becoming a cornerstone of many business models. Companies create alliances to optimize their business models, reduce risk, or acquire resources.</p>
+            <p>We can distinguish between four different types of partnerships:</p>
+            <ul>
+            <li><strong>Strategic alliances</strong> between non-competitors</li>
+            <li><strong>Coopetition:</strong> strategic partnerships between competitors</li>
+            <li><strong>Joint ventures</strong> to develop new businesses</li>
+            <li><strong>Buyer-supplier relationships</strong> to assure reliable supplies</li>
+            </ul>
+            </body>
+            </html>
+            
+            </div>
+    
+       

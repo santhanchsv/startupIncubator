@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>StartUp Incubator</title>
+</head>
+<body>
+  <body style="margin-top: 100px;"> <!-- Add margin-top to create a gap -->
+
+<!-- Your existing navigation bar -->
+<nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-lg bd-dark" data-bs-theme="#f5f5f5" style="height: 69px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'main/logo69.png' %}" alt="jhsadcgjsdhc" width="218" height="47" class="d-inline-block align-text-top ms-2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a href="{% url 'Homee' %}" class="nav-link pe-auto text-light fw-bolder">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link pe-auto text-light fw-bolder">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'top-startups' %}" class="nav-link pe-auto text-light fw-bolder">Top StartUps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resources' %}" class="nav-link pe-auto text-light fw-bolder">Learning Resources</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'submit-project' %}" class="nav-link pe-auto text-light fw-bolder">Pitch Idea</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'schemes' %}" class="nav-link pe-auto text-light fw-bolder">Government Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Google Translate Element -->
+                    <div id="google_translate_element"></div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button style="border-color: transparent" class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user" style="color: white;"></i>
+                        </button>
+                        <ul style="left: -8rem" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'student-register' %}">Enterpreneur</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'mentor-register' %}">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{% url 'investor-register' %}">Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-7/WcCpXy5aBJiK4fUMnuSrsQ/zZMMSJwWe1/2x4K5NcBLfykv5BoEU4B+XlUnV3F" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-mJ0pgYWjLr1gU0cykAo3+SM5r5S02dFfdHHCEm0FyIJ0esVhjH8Eggo0ZMpdqDhS" crossorigin="anonymous"></script>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Companies in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            /* background-color: #4CAF50; */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 20px 0 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        p, ul {
+            margin: 10px 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Value Proposition Canvas Introduction</h1>
+    <p>Using the value proposition canvas tool will reveal whether your product or service is the right fit for your customer. A lot of people believe that having a great idea is the foundation for a great business. This can be true, but once you have a great idea there are a whole number of things you should do to set yourself up for success. Firstly, you should define your business idea or concept by using the Business Model Canvas tool. You should then develop a deep understanding of your customer segments to determine who would actually be interested in your product or service. Then once you've worked both of those out, you need to make sure your product or service will satisfy a market or your customers by using the Value Proposition Canvas (VPC) tool, outlined in this learning resource.</p>
+    <p>I believe that it's essential to your business that you understand value, and not just the monetary purpose of your business, but to develop a deep understanding of how and why your customer values your product or service. We find value transitions from the business to the customer at the exchange point of the value proposition. Having a deep understanding of how your business' value proposition relates to your customer, will help you to understand value in the context of what you are offering.</p>
+    <p>So how do I understand the value my business gives to the customer? I suggest you use the VPC tool below.</p>
+    <h2>Value Proposition Canvas template</h2>
+    <img src="{% static 'main/img30.png' %}" alt="" class="responsive-img materialboxed medium-image" width="450" height="450">
+    <p><strong>What it does?</strong></p>
+    <p>The VPC is a tool which provides a framework for your business and allows you to see if your value proposition (product/service) is the right fit for your customers. It allows you to map, design, test, build and manage your customer value propositions for your service or product. Along with validation, it essentially gives you an insight into whether your business, service or offering has product/market fit.</p>
+    <p><strong>Why we use it?</strong></p>
+    <p>We use the VPC tool to:</p>
+    <ul>
+        <li>Quickly and easily map product/market fit;</li>
+        <li>Give an insight and understanding into the customer's functional jobs, pains, and gains;</li>
+        <li>Give an understanding of how our product or service helps the customer; and</li>
+        <li>Apply it to multiple products/services.</li>
+    </ul>
+    <p><strong>How do we use it?</strong></p>
+    <p>The VPC is comprised of two main sections – on the right is the Customer Segment Profile and on the left is the Value Proposition Map.</p>
+    <h3>1.0 Customer Segment Profile</h3>
+    <img src="{% static 'main/img31.png' %}" alt="" class="responsive-img materialboxed medium-image" width="400" height="400">
+    <p>The Customer Segment Profile links to your customer segment or personas. The Customer Segment Profile relates directly to your customer segment or personas (to learn more about persona development click <a href="#">here</a>). It's a description of the functional jobs, customer pains, and customer gains in the market. These are what we know and can observe of our customers through data analysis and problem solution interviews. To work through the Customer Segment Profile firstly start with listing the customer jobs.</p>
+    <p><strong>Functional jobs</strong></p>
+    <p>Customer jobs are the functional tasks, problems, or needs the customer has in the market. These jobs can be categorized as functional, social, and emotional, but it is important to note that jobs can be more than one of these things at a time. For example, eating food is actually a functional, social, and emotional job.</p>
+    <p><strong>Social jobs</strong></p>
+    <p>These are the things we do that relate to the people we interact with and how our social lives are structured. These jobs can be related to maintaining our social status/position in a group or community or one-to-one with our peers, family, or acquaintances.</p>
+    <p><strong>Emotional Jobs</strong></p>
+    <p>Emotional jobs are actions that invoke a feeling or emotional response of an individual or group. These actions are jobs that a user has to undertake to either maintain an emotional state or change to an emotional state.</p>
+    <p><strong>Customer Pains</strong></p>
+    <p>Otherwise known as the negative impacts. Ask yourself, what are the customer pains they may have in achieving these different jobs they do? A customer pain could be anything that annoys the customer before, during, and after getting the job done. It's really helpful to undertake the exercise of User Journey Mapping to distinguish these.</p>
+    <p><strong>Customer Gains</strong></p>
+    <p>To understand customer gains we are looking to identify opportunities for our customers which could help them complete their jobs. This could be anything that helps the customer get a positive outcome in line with their goals.</p>
+    <h3>2. Value Proposition Map</h3>
+    <img src="{% static 'main/img32.png' %}" alt="" class="responsive-img materialboxed medium-image" width="400" height="400">
+
+    <p>The Value Proposition Map links to your customer's values, pains, and gains. This map is designed to address your customer's values, pains, and gains and can
+        <p>The Value Proposition Map links to your customer's values, pains, and gains. This map is designed to address your customer's values, pains, and gains and can link directly to the Business Model Canvas. This is the value your business provides to your customer in exchange for money or value from the customer themselves. This section of the Value Proposition Map links directly to the Customer Segment Profile, above.</p>
+        <p><strong>Products and Service</strong></p>
+        <p>This section simply outlines the products and services that help your customer segment get their job done. Make a list of your products/services that help your customers achieve their functional, social, and emotional jobs.</p>
+        <p><strong>Pain Relievers</strong></p>
+        <p>List the pains that your product or service will relieve for the customer. It's good to think of this in the context of the customer journey. What pains do you relieve from the customer pains at different points in that journey and does your offering eliminate or reduce these pains?</p>
+        <p><strong>Gain Creators</strong></p>
+        <p>Additionally, to the pain relievers, how does your product create gains for the customer and which of the customer gains/benefits does your product or service address when creating outcomes.</p>
+        <p><strong>Problem/Solution Fit</strong></p>
+        <p>When the features of the Value Proposition Map perfectly match your Customer Value Map and do not cause additional pain your business/product has problem/solution fit. Problem/solution fit equals success! But remember, successful businesses have more than just a great value proposition – they have a great business model that makes the exchange of value possible.</p>
+        <p><strong>Product/Market Fit</strong></p>
+        <p>When the market validates your VPC through purchases, feedback reviews, or positive affirmation you have achieved product/market fit. This is a firm understanding and validation of your business by data of both your customers and value proposition, which equates to an exchange of value.</p>
+        <p>Achieving product/market fit is an important and critical step in developing a business. Keep in mind that the wants, needs, jobs, pains, and gains of your customer will change over time as the market changes – so make sure you regularly readdress the VPC and constantly test your assumptions through data analysis. I can't continue to stress enough that understanding your customer is key to your success.</p>
+    </div>
+    </body>
+    </html>
+    

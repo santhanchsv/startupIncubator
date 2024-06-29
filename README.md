@@ -36,6 +36,12 @@ The government of India's “Make in India” initiative includes innovation and
 ### Front Page
 ![frontpage](website-snapshots/home.png)
 
+### CHAT BOT -API
+![frontpage](website-snapshots/chatbot.png)
+
+### LANGUAGE TRASULATOR -API
+![frontpage](website-snapshots/language.png)
+
 ### Top Start Ups
 ![startups](website-snapshots/topstartups.png)
 
